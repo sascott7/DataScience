@@ -2,3 +2,4 @@ Flask
 numpy
 Pillow
 joblib
+tensorflow

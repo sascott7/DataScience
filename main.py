@@ -30,6 +30,7 @@ def index():
 
 @app.route("/predict", methods=["POST"])
 def predict():
+    load_model()
     image = request.files.get('imagefile', '')
 
     image = Image.open(image)
