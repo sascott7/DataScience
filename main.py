@@ -18,11 +18,10 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
 def index():
-    """Basic HTML reponse."""
     body = (
         "<html>"
         "<body style='padding: 10px;'>"
-        "<h1>Welcome to my Flask API</h1>"
+        "<h1>CS 551 Final Project Flask API</h1>"
         "</body>"
         "</html>"
     )
@@ -43,5 +42,4 @@ def predict():
     return str(prediction)
 
 if __name__ == "__main__":
-    load_model()
     app.run(host='0.0.0.0', port='2000')
